@@ -1,5 +1,4 @@
 
-import sys
 import os
 from tqdm import tqdm
 
@@ -27,24 +26,10 @@ def conv(lrcPath, srtPath):
                 prevDate = srtDate
                 prevStr = s
 
-
-def walkLrc(p='.'):
-    for root, _, files in os.walk(p):
-        for f in files:
-            if not f.endswith('.lrc'):
-                continue
-            p = os.path.join(root, f)
-            p2 = p[:-4]+'.srt'
-            print(p, p2)
-            conv(p, p2)
-
-
-walkLrc(sys.argv[1])
-
 if __name__ == __main__:
 
     lrc_Path = ''
-    str_Path = ''
+    str_Path = './output'
 
     for i in tqdm(os.listdir(lrc_Path)):
         
