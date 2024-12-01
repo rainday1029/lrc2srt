@@ -26,14 +26,14 @@ def conv(lrcPath, srtPath):
                 prevDate = srtDate
                 prevStr = s
 
-if __name__ == __main__:
+if __name__ == "__main__":
 
-    lrc_Path = ''
+    lrc_Path = './input'
     str_Path = './output'
 
     for i in tqdm(os.listdir(lrc_Path)):
         
         str_endswith = os.path.join(str_Path, i)
-        p2 = str_endswith[:-4] + '.str'
+        p2 = str_endswith[:-4] + '.srt'
         
         conv(os.path.join(lrc_Path, i), p2)
