@@ -1,6 +1,6 @@
 # lrc2srt
 
-This program code is to convert an lrc subtitle file into the srt format.
+This code is to convert an lrc subtitle file into the srt format.
 
 # Installation
 
